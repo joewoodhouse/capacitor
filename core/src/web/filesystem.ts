@@ -334,7 +334,7 @@ export class FilesystemPluginWeb extends WebPlugin implements FilesystemPlugin {
   /**
    * Return full File URI for a path and directory
    * @param options the options for the stat operation
-   * @return a promise that resolves with the file stat result
+   * @return a promise that resolves with the file uri result
    */
   async getUri(options: GetUriOptions): Promise<GetUriResult> {
     let path: string = this.getPath(options.directory, options.path);
